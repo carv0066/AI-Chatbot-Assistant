@@ -7,9 +7,11 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@nuxt/static": "^1.0.0",
     "dompurify": "^3.1.7",
     "marked": "^14.1.2",
     "nuxt": "^3.13.2",
@@ -19,6 +21,7 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.12.1",
-    "@types/dompurify": "^3.0.5"
+    "@types/dompurify": "^3.0.5",
+    "gh-pages": "^6.2.0"
   }
 }
