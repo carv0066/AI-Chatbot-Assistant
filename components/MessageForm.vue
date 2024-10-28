@@ -57,7 +57,7 @@ async function handleSubmit() {
             }
 
         const parsedMessage = await marked.parse(
-        dompurify.sanitize(content.text.value)
+        DOMPurify.sanitize(content.text.value)
     );
     messages.value.push({
         name: "Alex",
