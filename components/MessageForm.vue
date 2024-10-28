@@ -20,7 +20,7 @@
 
 <script setup lang="ts">
 import  { marked } from "marked";
-import dompurify from "Dompurify";
+import DOMPurify from 'dompurify';
 
 const newMessage = ref("");
 const messages = useMessages();
