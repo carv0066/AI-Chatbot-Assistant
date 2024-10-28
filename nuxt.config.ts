@@ -1,10 +1,14 @@
 import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
-  ssr: false, // Disable SSR for GitHub Pages
+  // Disable SSR for GitHub Pages
+  ssr: false,
+
   app: {
     baseURL: '/AI-Chatbot-Assistant/' 
   },
+
   modules: ['@nuxtjs/tailwindcss'],
-  devtools: { enabled: true }
+  devtools: { enabled: true },
+  compatibilityDate: '2024-10-24'
 })

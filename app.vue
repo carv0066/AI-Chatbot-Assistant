@@ -1,7 +1,6 @@
 <template>
 <div
   class="bg-repeat bg-cover w-full h-full font-sans"
-  style="background-image: url(/bg.png)"
 >
   <div class="flex items-center justify-center h-full">
     <div
@@ -36,5 +35,6 @@ body,
 
 .bg-repeat.bg-cover {
   min-height: 100vh;
+  background-image: url('/public/background.png');
 }
 </style>

@@ -1,23 +1,34 @@
 {
-    "compilerOptions": {
-        "target": "ESNext",
-        "module": "ESNext",
-        "lib": ["DOM", "ESNext"],
-        "strict": true,
-        "esModuleInterop": true,
-        "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true,
-        "baseUrl": ".",
-        "paths": {
-            "~/*": ["./*"],
-            "@/*": ["./*"]
-        }
-    },
-    "include": [
-        "nuxt.config.ts",
-        "server/**/*.ts",
-        "components/**/*.vue",
-        "layouts/**/*.vue",
-        "pages/**/*.vue"
-    ]
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["DOM", "ESNext"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "Bundler",
+    "allowJs": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": true,
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"]
+    }
+  },
+  "include": [
+    ".nuxt/nuxt.d.ts",
+    "nuxt.config.ts",
+    "server/**/*.ts",
+    "composables/**/*.ts",
+    "components/**/*.{js,vue,ts}",
+    "layouts/**/*.vue",
+    "pages/**/*.vue",
+    "interfaces/**/*.ts",
+    "plugins/**/*.{js,ts}",
+    "middleware/**/*.{js,ts}",
+    "utils/**/*.{js,ts}"
+  ]
 }

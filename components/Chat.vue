@@ -34,7 +34,8 @@
         <div ref="container" v-else class="flex flex-col gap-3.5 py-5 px-3 overflow-y-scroll max-h-[400px]">
             <div v-for="message in messages" class="flex items-end gap-3" :class="{'flex-row-reverse': !message.isAlex}">
                 <img v-if="message.isAlex" class="block w-12 h-12 overflow-hidden rounded-full border-2 border-slate-200/70" src="public/fitness-alex.png" />
-                <div v-else class="flex uppercase items-center justify-center text-xl text-center text-white font-bold bg-gradient-to-t from-sky-500 to-emerald-500 w-12 h-12 overflow-hidden rounded-full border-2 border-slate-200/70">
+                <div v-else
+                class="flex uppercase items-center justify-center text-xl text-center text-white font-bold bg-gradient-to-t from-sky-500 to-emerald-500 w-12 h-12 overflow-hidden rounded-full border-2 border-slate-200/70">
                     {{ customerInitials }}
                 </div>
                 <div class="w-3/5 flex flex-col gap-2 border px-4 pt-3 pb-4 rounded-xl bg-slate-50/80 border-slate-200/80">
