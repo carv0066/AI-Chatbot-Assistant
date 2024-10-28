@@ -8,11 +8,10 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "Bundler",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
     "allowJs": true,
     "noEmit": true,
-    "resolveJsonModule": true,
-    "allowImportingTsExtensions": true,
     "paths": {
       "~/*": ["./*"],
       "@/*": ["./*"]
