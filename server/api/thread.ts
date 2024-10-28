@@ -1,4 +1,6 @@
-import { client, assistant } from "../utilities/openai"
+import { client, assistant } from "../utilities/openai";
+import { defineEventHandler, getQuery } from 'h3';
+
 
 export default defineEventHandler(async (event) => {
     const queryParams = getQuery(event);
