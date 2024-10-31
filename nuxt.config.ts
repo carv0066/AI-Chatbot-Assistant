@@ -1,7 +1,7 @@
 import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
-  // Disable SSR for GitHub Pages
+
   ssr: false,
 
   app: {
