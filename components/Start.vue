@@ -2,7 +2,7 @@
     <section class="flex flex-col items-center gap-6">
         <img src="/alex.png" class="w-64 h-64 rounded-full" />
         <h1 class="text-center font-bold text-2xl">
-            Alex Health & Exericise Bot
+            Alex Health & Exercise Bot
         </h1>
         <form @submit.prevent="handleSubmit">
             <fieldset :disabled="isSubmitted" class="flex flex-col gap-2 w-full">
